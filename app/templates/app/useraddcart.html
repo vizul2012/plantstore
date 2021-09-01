@@ -1,0 +1,350 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fronia - Shop</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="fronia plant store bootstrap 5 template is an awesome website template for any home plant shop.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.ico' %}" />
+
+    <!-- CSS
+    ============================================ -->
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/Pe-icon-7-stroke.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/ion.rangeSlider.min.css' %}" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+</head>
+
+<body>
+    <div class="preloader-activate preloader-active open_tm_preloader">
+        <div class="preloader-area-wrap">
+            <div class="spinner d-flex justify-content-center align-items-center h-100">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+
+        <!-- Begin Main Header Area -->
+        {% include 'app/Ubase.html' %}
+        <!-- Main Header Area End Here -->
+
+        <!-- Begin Main Content Area -->
+        
+        <!-- Main Content Area End Here -->
+
+      
+        <!-- Begin Main Content Area -->
+        
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="grid-view" role="tabpanel" aria-labelledby="grid-view-tab">
+                                    <div class="product-grid-view row g-y-20">
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product-variable.html">
+                                                        <img class="primary-img" src="{% static 'assets/images/product/medium-size/1-1-270x300.jpg' %}" alt="Product Images">
+                                                        <img class="secondary-img" src="{% static 'assets/images/product/medium-size/1-2-270x300.jpg' %}" alt="Product Images">
+                                                    </a>
+                                                    <div class="product-add-action">
+                                                        <ul>
+                                                            <li class="quuickview-btn" data-bs-toggle="modal" data-bs-target="#quickModal"><a href="#" data-tippy="Quickview" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                                <i class="pe-7s-look"></i>
+                                                                
+                                                            </li>
+                                                            <li>
+                                                                <a href="cart.html" data-tippy="Add to cart" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                                    <i class="pe-7s-cart"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div> 
+                                                <div class="product-content">
+                                                    <a class="product-name" href="single-product-variable.html">American
+                                                        Marigold</a>
+                                                    <div class="price-box pb-1">
+                                                        <span class="new-price">$23.45</span>
+                                                    </div>
+                                                    <div class="rating-box">
+                                                        <ul>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-md-4 col-sm-6">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product-variable.html">
+                                                        <img class="primary-img" src="assets/images/product/medium-size/1-2-270x300.jpg" alt="Product Images">
+                                                        <img class="secondary-img" src="assets/images/product/medium-size/1-3-270x300.jpg" alt="Product Images">
+                                                    </a>
+                                                    <div class="product-add-action">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="wishlist.html" data-tippy="Add to wishlist" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                                    <i class="pe-7s-like"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="quuickview-btn" data-bs-toggle="modal" data-bs-target="#quickModal">
+                                                                <a href="#" data-tippy="Quickview" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                                    <i class="pe-7s-look"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="cart.html" data-tippy="Add to cart" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                                    <i class="pe-7s-cart"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product-content">
+                                                    <a class="product-name" href="single-product-variable.html">Black Eyed
+                                                        Susan</a>
+                                                    <div class="price-box pb-1">
+                                                        <span class="new-price">$25.45</span>
+                                                    </div>
+                                                    <div class="rating-box">
+                                                        <ul>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="col-md-4 col-sm-6">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product-variable.html">
+                                                        <img class="primary-img" src="assets/images/product/medium-size/1-3-270x300.jpg" alt="Product Images">
+                                                        <img class="secondary-img" src="assets/images/product/medium-size/1-4-270x300.jpg" alt="Product Images">
+                                                    </a>
+                                                    <div class="product-add-action">
+                                                        <ul>
+                                                            
+                                                            <li class="quuickview-btn" data-bs-toggle="modal" data-bs-target="#quickModal">
+                                                                <a href="#" data-tippy="Quickview" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                                    <i class="pe-7s-look"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="cart.html" data-tippy="Add to cart" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                                                                    <i class="pe-7s-cart"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                -->
+                                                    <!-- <div class="rating-box">
+                                                        <ul>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                            <li><i class="fa fa-star"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div> 
+                                   </div>
+                                </div>
+                                
+                            </div> -->
+                            <div class="pagination-area">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">&raquo;</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main> -->
+        <!-- Main Content Area End Here -->
+
+        
+        <!-- Begin Footer Area -->
+        {% include 'app/Sfoot.html' %}
+        <!-- Footer Area End Here -->
+
+
+        <!-- Begin Modal Area -->
+        <div class="modal quick-view-modal fade" id="quickModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="quickModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-tippy="Close" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                        </button>
+                    </div> 
+                    <div class="modal-body">
+                        <div class="modal-wrap row">
+                            <div class="col-lg-6">
+                                <div class="modal-img">
+                                    <div class="swiper-container modal-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#" class="single-img">
+                                                    <img class="img-full" src="{% static 'assets/images/product/large-size/1-1-570x633.jpg' %}" alt="Product Image">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#" class="single-img">
+                                                    <img class="img-full" src="{% static 'assets/images/product/large-size/1-2-570x633.jpg' %}" alt="Product Image">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#" class="single-img">
+                                                    <img class="img-full" src="{% static 'assets/images/product/large-size/1-3-570x633.jpg' %}" alt="Product Image">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#" class="single-img">
+                                                    <img class="img-full" src="{% static 'assets/images/product/large-size/1-4-570x633.jpg' %}" alt="Product Image">
+                                                </a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pt-5 pt-lg-0">
+                                <div class="single-product-content">
+                                    <h2 class="title">American Marigold</h2>
+                                    <div class="price-box">
+                                        <span class="new-price">$23.45</span>
+                                    </div>
+                                    <div class="rating-box-wrap">
+                                        <div class="rating-box">
+                                            <ul>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="review-status">
+                                            <!-- <a href="#">( 1 Review )</a> -->
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="short-desc">Lorem ipsum dolor sit amet, consectetur adipisic elit, sed do eiusmod
+                                        tempo incid ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                        dolor
+                                        in reprehenderit in voluptate</p>
+                                    <ul class="quantity-with-btn">
+                                        <li class="quantity">
+                                           
+                                        </li>
+                                        <li class="add-to-cart">
+                                            <a class="btn btn-custom-size lg-size btn-fronia-primary" href="cart.html">Add to cart</a>
+                                                
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="service-item-wrap pb-0">
+                                        <li class="service-item">
+                                            <div class="service-img">
+                                                <img src="{% static 'assets/images/shipping/icon/car.png' %}" alt="Shipping Icon">
+                                            </div>
+                                            <div class="service-content">
+                                                <span class="title">Free <br> Shipping</span>
+                                            </div> 
+                                        </li>
+                                        <li class="service-item">
+                                            <div class="service-img">
+                                                <img src="{% static 'assets/images/shipping/icon/card.png' %}" alt="Shipping Icon">
+                                            </div>
+                                            <div class="service-content">
+                                                <span class="title">Safe <br> Payment</span>
+                                            </div>
+                                        </li>
+                                        <li class="service-item">
+                                            <div class="service-img">
+                                                <img src="{% static 'assets/images/shipping/icon/service.png' %}" alt="Shipping Icon">
+                                            </div>
+                                            <div class="service-content">
+                                                <span class="title">Safe <br> Payment</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Area End Here -->
+
+        <!-- Begin Scroll To Top -->
+        <a class="scroll-to-top" href="">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- Scroll To Top End Here -->
+
+    </div>
+
+    <!-- Global Vendor, plugins JS -->
+
+    <!-- JS Files
+    ============================================ -->
+
+    <script src="{% static 'assets/js/vendor/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-migrate-3.3.2.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery.waypoints.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/modernizr-3.11.2.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.nice-select.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/parallax.min.js' %}' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/tippy.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/ion.rangeSlider.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/mailchimp-ajax.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.counterup.js' %}"></script>
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

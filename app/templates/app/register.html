@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Begin Main Header Area-->
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fronia - Login | Register</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="fronia plant store bootstrap 5 template is an awesome website template for any home plant shop.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.ico' %}" />
+
+    <!-- CSS
+    ============================================ -->
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/Pe-icon-7-stroke.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/ion.rangeSlider.min.css' %}" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+</head>
+
+<body>
+    <div class="preloader-activate preloader-active open_tm_preloader">
+        <div class="preloader-area-wrap">
+            <div class="spinner d-flex justify-content-center align-items-center h-100">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+</body>
+        <!-- Begin Main Header Area -->
+
+        
+        <main class="main-content">
+            <!-- <div class="breadcrumb-area breadcrumb-height"> -->
+            <div class="margin"></div>
+                <div class="container h-10" >
+                    <div class="row h-20">
+                        <div class="col-lg-12">
+                            <div class="breadcrumb-item">
+                              <img src="{% static 'assets/images/logo/dark.png' %}" alt="Header Logo">
+                              <h2 class="breadcrumb-heading">Seller Register Page</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <!--div class="login-register-area section-space-y-axis-100"-->
+        </main>
+        <main class="main-content" >
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-6 pt-5 pt-lg-0"> -->
+                        <form action="{% url 'registerseller' %}" method="POST">{% csrf_token %}
+                            <div class="login-form">
+                                <h4 class="login-title">Register</h4>
+                                {% if err %}
+                                <p style="color: crimson;">{{err}}</p>
+                                {% endif %}
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <label>First Name</label>
+                                        <input type="text" name="fname" placeholder="First Name">
+                                    </div>                                        <div class="col-md-6 col-12">
+                                        <label>Last Name</label>
+                                        <input type="text" name="lname" placeholder="Last Name">
+                                    </div>
+                                    <div class="col-md-12">
+                                          <label>Email Address*</label>
+                                        <input type="email" name="email" placeholder="Email Address">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Mobile Number</label>
+                                        <input type="text" name="phnb" placeholder="phonenb">
+                                        </div>
+                                    <div class="col-md-6">
+                                        <label>address</address></label>
+                                        <input type="text" name="add" placeholder="address">
+                                    </div>
+                                    <div> 
+                                          <label>Password</label>
+                                          <input type="password" name="pwd" placeholder="enter a password">
+                                    </div>
+                                    <div class="col-12">
+                                            <button class="btn btn-custom-size lg-size btn-fronia-primary" style="background: rgb(57, 94, 57);">Register</button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <label>Already You have an account   <a href="{% url 'login' %}">Login Now</a></label>
+                                    </div>
+                                </div>
+                            </div>    
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Main Content Area End Here
+
+       
+    </div>
+
+    
+
+    <!-- JS Files
+    ============================================ -->
+
+    <script src="{% static 'assets/js/vendor/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-migrate-3.3.2.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery.waypoints.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/modernizr-3.11.2.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.nice-select.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/parallax.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/tippy.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/ion.rangeSlider.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/mailchimp-ajax.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.counterup.js' %}"></script>
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

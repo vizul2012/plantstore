@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fronia | Seller-Home</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="fronia plant store bootstrap 5 template is an awesome website template for any home plant shop.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.ico' %}" />
+
+    <!-- CSS
+    ============================================ -->
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/Pe-icon-7-stroke.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/ion.rangeSlider.min.css' %}" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+</head>
+
+<body>
+    <div class="preloader-activate preloader-active open_tm_preloader">
+        <div class="preloader-area-wrap">
+            <div class="spinner d-flex justify-content-center align-items-center h-100">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+
+        <!-- Begin Main Header Area -->
+        {% include 'app/sbase.html' %}
+        <!-- Main Header Area End Here -->
+
+        <!-- Begin Blog Area -->
+        <br><br>
+        <div class="blog-area section-space-bottom-100">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <h2 class="section-title mb-7">{{pk.Shop_name}}</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="swiper-container blog-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="blog-item">
+                                        <div class="blog-content">
+                                            <h2 class="title">
+                                                <a href="{% url 'sellerorder' %}">MY Orders</a>
+                                            </h2>
+                                            <p class="short-desc mb-7">Lorem ipsum dolor sit amet, consecteturl adipisl elit,
+                                                sed do eiusmod tempor incidio ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-item">
+                                        <div class="blog-content">
+                                            <h2 class="title">
+                                                <a href="{% url 'allproduct' %}">Myproduct</a>
+                                            </h2>
+                                            <p class="short-desc mb-7">Lorem ipsum dolor sit amet, consecteturl adipisl elit,
+                                                sed do eiusmod tempor incidio ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-item">
+                                        <div class="blog-content">
+                                            <h2 class="title">
+                                                <a href="blog.html">my transactions</a>
+                                            </h2>
+                                            <p class="short-desc mb-7">Lorem ipsum dolor sit amet, consecteturl adipisl elit,
+                                                sed do eiusmod tempor incidio ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog Area End Here -->
+
+        <!-- Begin Footer Area -->
+        {% include 'app/Sfoot.html' %}
+        <!-- Footer Area End Here -->
+
+  </div>
+
+    <!-- Global Vendor, plugins JS -->
+
+    <!-- JS Files
+    ============================================ -->
+
+    <script src="{% static 'assets/js/vendor/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-migrate-3.3.2.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery.waypoints.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/modernizr-3.11.2.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.nice-select.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/parallax.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/tippy.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/ion.rangeSlider.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/mailchimp-ajax.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.counterup.js' %}"></script>
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
